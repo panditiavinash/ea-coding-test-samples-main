@@ -24,3 +24,11 @@
     - In order to have a clean commands use any of the following command to execute the tests and generate html reports. For more info on these commands check the package.json-->scripts section
         - npm run test-code
         - yarn run test-code
+
+
+# Test Cases:
+
+    -  Verifies the title of the web page
+    -  Verifies the festival data. 
+        - For each and every execution of web page, festival data is getting changed, hence after few observtions it is noticed that there are total is are a total of 18 set of festivals displayed on web page
+        - A test data set is created and data that is coming in the web page is verified with the this test data to make sure that data is correctly populated

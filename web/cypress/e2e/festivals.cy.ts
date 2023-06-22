@@ -9,11 +9,13 @@ describe('EA Coding Test - Festivals Web UI', () => {
     cy.visit(festivalsURL)
   })
 
+  // validates the title of the web page
   it('Festivals Web Page Title Validation', () => {
-    cy.title().should('eq', 'EaCodingTest'); // validates the title of the web page
+    cy.title().should('eq', 'EaCodingTest'); 
   })
 
+  // validates the festival data inside the web page
   it('Festivals Data Validations In Web Page', () => {
-    festivalHelpers.festivalsEA('//ol/li') // validates the festival data inside the web page
+    festivalHelpers.festivalsEA('//ol/li') 
   })
 })

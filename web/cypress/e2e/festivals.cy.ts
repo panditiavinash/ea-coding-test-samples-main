@@ -1,11 +1,19 @@
 
-import { FestivalHelpers } from './helpers/festivalsDataValidation'
+import { FestivalHelpers } from './helpers/festivalsDataValidation';
+import { festivalsURL } from './helpers/baseUrl';
 
-describe('EA Coding Test', () => {
+describe('EA Coding Test - Festivals Web UI', () => {
   const festivalHelpers = new FestivalHelpers();
-  it('Festivals Web Page Validations', () => {
-    cy.visit('http://localhost:4200/festivals') // open a web page
-    cy.title().should('eq', 'EaCodingTest');
-    festivalHelpers.festivalsEA('//ol/li') // validates the data inside the web page
+
+  beforeEach(() => {
+    cy.visit(festivalsURL)
+  })
+
+  it('Festivals Web Page Title Validation', () => {
+    cy.title().should('eq', 'EaCodingTest'); // validates the title of the web page
+  })
+
+  it('Festivals Data Validations In Web Page', () => {
+    festivalHelpers.festivalsEA('//ol/li') // validates the festival data inside the web page
   })
 })

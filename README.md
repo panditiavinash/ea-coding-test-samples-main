@@ -8,7 +8,7 @@
 # Commands to run the tests
 
     - Clone the repository from Git Hub
-    - Run the festivals website (Follow the steps mentioned in "README.MD" which is in the root folder)
+    - Run the festivals website (Follow the steps mentioned in ".web/README.MD")
     - Test scripts are present in "web/cypress/e2e" this file path
     - Run any the following command to install node.js libraries that are mentioned in packages.json
             - npm install

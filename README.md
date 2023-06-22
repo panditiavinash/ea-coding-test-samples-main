@@ -1,5 +1,5 @@
 
-# Testing Festivals Web Page
+# Testing EA Festivals Web Page
 
 # Pre-requisites to run the tests
     - Node Js
